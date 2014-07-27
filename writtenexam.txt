@@ -1,0 +1,107 @@
+Answer these below Questions:
+
+
+
+
+What jdk contains or composed of and define each components?
+JDK has as its primary components a collection of programming tools. JDK contains JVM which is Java Virtual Machine, API is Java platform which has in build classes and supporting file.
+
+What is IDE?
+IDE Stand for integrated development environment. It is a software application that provides comprehensive facilities to computer programmers for software development. An IDE normally consists of a source code editor, build automation tools and a debugger. Most modern IDEs offer intelligent code completion features.
+What are the IDEs available in the market to support java?
+Most common IDE available in the market are Net Beans, Eclipse, Intelij etc.
+
+Explain the entire java life cycle.
+1. Write code in a text editor. This is the source code, ends with .java.
+2. Load the code in to the java compiler. 
+3. The java compiler creates the byte codes (ends with .class). 
+4. Then this can be used by the JVM to run it. 
+5. Then it can be used by the computer operating system to execute. 
+
+
+What is class?
+A class is a blueprint or template from which individual objects are created. It specifies the design of an object.
+
+What is object?
+Objects are instances of a class. The relationship is such that many objects can be created using one class. Each object has its own data but its underlying structure (i.e., the type of data it stores, its behaviors) are defined by the class.
+
+
+What is the entry point of an application?
+In computer programming, an entry point is where control enters a program or piece of code. In many programming languages, the main function is where a program starts its execution.
+
+Why main is static?	
+The method is static because otherwise there would be ambiguity about which constructor should be called.
+
+What is the difference between an Interface and Abstract class?
+Main difference is methods of a Java interface are implicitly abstract and cannot have implementations. A Java abstract class can have instance methods that implements a default behavior. Variables declared in a Java interface is by default final. An abstract class may contain non-final variables.
+
+Can you make an Object from an Interface and Abstract class? If not how do you use it?
+NO we cannot. We need a concrete class to connect with Interface and Abstract class.
+
+What is Access Specifier?
+Access Specifiers (also known as Visibility Specifiers ) regulate access to classes, fields and methods in Java.These Specifiers determine whether a field or method in a class, can be used or invoked by another method in another class or sub-class. Access Specifiers can be used to restrict access. Access Specifiers are an integral part of object-oriented programming.
+
+What is OOP? Define each feature of java OOP.
+OOP stands for Object Oriented Programming. is a programming paradigm that represents the concept of "objects" that have data fields (attributes that describe the object) and associated procedures known as methods. The four main features of OOP are Polymorphism, encapsulation, inheritance and abstraction.
+
+The purpose of abstraction is to hide information that is not relevant or rather show only relevant information and to simplify it by comparing it to something similar in the real world.
+
+Encapsulation means the localization of the information or knowledge within an object.
+Inheritance is the process by which one class acquires the properties and functionalities of another class. Inheritance provides the idea of reusability of code and each sub class defines only those features that are unique to it.
+
+Polymorphism is a feature that allows one interface to be used for a general class of actions. It’s an operation may exhibit different behavior in different instances.
+
+What is API? Name list of API that you have used so far.
+API, an abbreviation of application program interface, is a set of routines, protocols, and tools for building software applications. The API specifies how software components should interact and are used when programming graphical user interface (GUI) components.  A good API makes it easier to develop a program by providing all the building blocks. A programmer then puts the blocks together.
+So far I have user bufferreader, filereader, scanner, string, ioexception etc.
+
+Does java support multiple inheritance? NO
+
+What is method overloading and when it happens?
+Method Overloading is the concept of writing multiple methods with the same name. Here the common characteristic is only the name. Parameters must be different. Return type can be anything. 
+
+What is method overriding and when it happens?
+If subclass (child class) has the same method as declared in the parent class, it is known as method overriding. 
+In other words, if subclass provides the specific implementation of the method that has been provided by one of its parent class, it is known as Method Overriding.
+Explain exceptions in java and how to handle it.
+Exceptions are the customary way in Java to indicate to a calling method that an abnormal condition has occurred. We have to use Try Catch method to handle exception. A method catches an exception using a combination of the try and catch keywords. A try/catch block is placed around the code that might generate an exception.
+
+What is static keyword in java? How it has been used in variables and methods?
+In Java, a static member is a member of a class that isn’t associated with an instance of a class. Instead, the member belongs to the class itself. As a result, we can access the static member without first creating a class instance. 
+The static variable can be used to refer the common property of all objects (that is not unique for each object).
+
+What is final and how it has been used variables and methods?
+Final is a keyword in Java. By using final we can’t change the value or method. If we use before class it will not allow to extent or implement.
+
+
+What is final, finally and finalize?
+Anything inside of the "finally" clause will be executed regardless of if the code in the 'try' block throws an exception or not. "Finalize" is called by the JVM before an object is about to be garbage collected. The final keyword is used to declare constants.
+
+What is a constructor?
+Constructors are similar to methods, but with some important differences. When we create a new instance (a new object) of a class using the new keyword, a constructor for that class is called. Constructors are used to initialize the instance variables (fields) of an object. A constructors must have the same name as the class
+
+What is "this" keyword in java?
+Within an instance method or a constructor, this is a reference to the current object — the object whose method or constructor is being called. We can refer to any member of the current object from within an instance method or a constructor by using this.
+
+What is JVM stand for? 
+Java Virtual Machine.
+
+
+What version of java are you using?
+1.7
+
+What is JAR stand for? 
+Java archive
+
+What is compile time and run time?
+In computer science, compile time refers to either the operations performed by a compiler (the "compile-time operations"), programming language requirements that must be met by source code for it to be successfully compiled (the "compile-time requirements"), or properties of the program that can be reasoned about at compile time.
+In computer science, runtime, or execution time is the time during which a program is running (executing), in contrast to other phases of a program's lifecycle such as compile time, link time, load time, etc.
+
+What is heap?
+In computer science, a heap is a specialized tree-based data structure that satisfies the heap property. In a heap the highest (or lowest) priority element is always stored at the root, hence the name heap. A heap is not a sorted structure and can be regarded as partially ordered
+
+How java manage its memory?
+* In Java, memory is allocated only to objects. There is no explicit allocation of memory, there is only the creation of new objects. (Java even treats array types as objects.)
+* The Java runtime employs a garbage collector that reclaims the memory occupied by an object once it determines that object is no longer accessible. This automatic process makes it safe to throw away unneeded object references because the garbage collector does not collect the object if it is still needed elsewhere. Therefore, in Java the act of letting go of unneeded references never runs the risk of deallocating memory prematurely.
+* In Java, it's easy to let go of an entire "tree" of objects by setting the reference to the tree's root to null; the garbage collector will then reclaim all the objects (unless some of the objects are needed elsewhere). This is a lot easier than coding each of the objects' destructors to let go of its own dependencies (which is a coding-level problem with C++).
+
